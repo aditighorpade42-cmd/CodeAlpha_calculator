@@ -1,0 +1,128 @@
+/*Light Mode */
+:root {
+  --bg-color: #f0f0f0;
+  --calc-bg: #ffffff;
+  --text-color: #000;
+  --btn-bg: #e0e0e0;
+  --btn-hover: #d6d6d6;
+  --operator-bg: #f33b12;
+  --operator-hover: #e8d509d8;
+  --equal-bg: #27ae60;
+  --equal-hover: #2bef7dc7;
+}
+
+/* Dark Mode */
+body.dark {
+  --bg-color: #1c1c1c;
+  --calc-bg: #2c2c2c;
+  --text-color: #fff;
+  --btn-bg: #333;
+  --btn-hover: #444;
+  --operator-bg: #160feb;
+  --operator-hover: #22cfe6;
+  --equal-bg: #16a085;
+  --equal-hover: #26ccb0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: var(--bg-color);
+  transition: background 0.3s ease;
+}
+
+.theme-toggle {
+  margin-bottom: 15px;
+}
+
+.theme-toggle button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  background: var(--operator-bg);
+  color: white;
+  transition: 0.3s;
+}
+
+.theme-toggle button:hover {
+  background: var(--operator-hover);
+}
+
+.calculator {
+  width: 320px;
+  background: var(--calc-bg);
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+  padding: 20px;
+  transition: background 0.3s ease;
+}
+
+#display {
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  font-size: 2rem;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: right;
+  background: #111;
+  color: #fff;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.btn {
+  padding: 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: var(--btn-bg);
+  color: var(--text-color);
+  transition: transform 0.1s ease, background 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--btn-hover);
+  transform: scale(1.05);
+}
+
+.operator {
+  background: var(--operator-bg);
+  color: white;
+}
+
+.operator:hover {
+  background: var(--operator-hover);
+}
+
+.equal {
+  grid-row: span 2;
+  background: var(--equal-bg);
+  color: white;
+}
+
+.equal:hover {
+  background: var(--equal-hover);
+}
+
+.zero {
+  grid-column: span 2;
+}
