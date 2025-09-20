@@ -5,25 +5,25 @@ It allows users to perform basic arithmetic operations with a clean and interact
 
 ## 🚀 Features
 
--Addition, Subtraction, Multiplication, Division
+- Addition, Subtraction, Multiplication, Division
 
--Responsive layout
+- Responsive layout
 
--Clear and simple UI
+- Clear and simple UI 
 
--Works in all modern browsers
+- Works in all modern browsers
 
--Easy to customize with your own styles
+- Easy to customize with your own styles
 
 
 ## 🛠️ Technologies Used
 
--HTML
+- HTML
 
--CSS
+- CSS
 
--JavaScript
-
+- JavaScript
+ 
 
 ## 📂 Project Structure
 
@@ -38,7 +38,7 @@ calculator/
 
 1. Clone this repository:
 
-git clone https://github.com/aditighorpade42-cmd/CodeAlpha_calculator
+    git clone https://github.com/aditighorpade42-cmd/CodeAlpha_calculator
 
 2. Open the project folder on your computer.
 
@@ -52,13 +52,13 @@ git clone https://github.com/aditighorpade42-cmd/CodeAlpha_calculator
 
 ## 📌 Future Enhancements
 
--Add scientific calculator functions
+- Add scientific calculator functions
 
--Keyboard input support
+- Keyboard input support
 
--Theme customization (dark/light mode)
+- Theme customization (dark/light mode)
 
--Memory functions (M+, M-, MR, MC)
+- Memory functions (M+, M-, MR, MC)
 
 
 ## 📜 License
